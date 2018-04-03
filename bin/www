@@ -1,0 +1,15 @@
+const app = require('../app'),
+    debug = require('debug')('SHORTEN-URL:SERVER'),
+    http = require('http'),
+    port = process.env.PORT || 3001,
+    server = http.createServer(app);
+
+server.listen(port);
+server.on('error', (er) => {
+    debug(er)
+});
+
+server.on('listening', () => {
+    debug(`Sever Listening on : ${server.address().port} `);
+})
+

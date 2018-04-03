@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="form-group">
+        <label for="email">Long URL:</label>
+        <input type="URL" class="form-control" id="url">
+    </div>
+    <button type="button" class="btn btn-primary" id="shorten-url-btn">Shorten URL</button>
+    <div class="alert alert-info mt-2" style="display: none" id="short-url">
+        <strong>shorten URL:
+            <a target="_blank"></a>
+        </strong>
+    </div>
+    <table class="table table-bordered mt-2">
+        <thead>
+            <tr>
+                <th>Original URL</th>
+                <th>Shorten URL</th>
+                <th>Created at</th>
+                <th>Clicks</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each urls}}
+            <tr>
+                <td>{{decodeUrl this.url}}</td>
+                <td><a href="/{{shortenURL this._id}}" target="_blank">{{../host}}{{shortenURL this._id}}</a></td>
+                <td>{{parseDate this.created_at}}</td>
+                <td>{{this.clicks}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
