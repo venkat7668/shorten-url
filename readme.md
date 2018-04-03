@@ -20,4 +20,4 @@ When you access the shorten it redirects to the actual/orginal URL
 What it tracks
 Number of visits of the shorten URL
 
-
+![shorten_application](https://raw.githubusercontent.com/venkat7668/shorten-url/master/Shorten_app.png)
