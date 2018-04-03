@@ -2,32 +2,32 @@ This is a shorten-url project developed in Node.js
 
 Dependencies
 ===============================
-NPM
-Node.JS
-MongoDB
+NPM <br/>
+Node.JS<br/>
+MongoDB<br/>
 
 Clone the application
 ===============================
 git clone https://github.com/venkat7668/shorten-url.git
 
-RUN APPLICATION
+Run application
 ===============================
-npm install
-npm run serve
+npm install<br/>
+npm run serve<br/>
 
 Listening Port
 ===============================
-Localhost :3001
-Production: process.env.PORT
+Localhost :3001<br/>
+Production: process.env.PORT<br/>
 
 Features:
 ===============================
-This application takes url and creates a shorten url.
-When you access the shorten it redirects to the actual/orginal URL
+This application takes url and creates a shorten url.<br/>
+When you access the shorten it redirects to the actual/orginal URL<br/>
 
 What it tracks
 ===============================
-Number of visits of the shorten URL
+Number of visits of the shorten URL<br/>
 
 
 Screenshort
